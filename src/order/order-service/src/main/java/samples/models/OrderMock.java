@@ -11,7 +11,6 @@ import example.events.OrderCreatedEvent;
 
 public class OrderMock {
   private String id;
-
   private OrderState state;
   private OrderDetails orderDetails;
 
