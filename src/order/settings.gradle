@@ -1,4 +1,6 @@
 
 // rootProject.name = 'order'
-include 'common'
+
 include 'order-api'
+include 'common'
+project(":common").projectDir = new File('../common')
