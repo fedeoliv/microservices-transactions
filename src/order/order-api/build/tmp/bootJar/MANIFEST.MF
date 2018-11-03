@@ -1,2 +1,4 @@
 Manifest-Version: 1.0
+Start-Class: samples.Application
+Main-Class: org.springframework.boot.loader.JarLauncher
 
