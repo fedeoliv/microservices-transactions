@@ -1,0 +1,4 @@
+
+// rootProject.name = 'order'
+include 'common'
+include 'order-api'
