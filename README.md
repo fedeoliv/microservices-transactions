@@ -50,21 +50,31 @@ Services are implemented through choreography-based sagas, which means that all 
 
 ## Building and Running: Order services
 
+### Running the Docker container
+
 Go to `src/order` and build the application:
+```
+$ docker build -t order-api .
+$ docker run -p 8080:8080 -t order-api
+```
+
+Next you can use the Order API through Swagger UI on http://localhost:8080/swagger-ui.html.
+
+### Running without Docker container
+
+If you want to run services without Docker container, run this script on `src/order`:
 
 ```
 ./gradlew assemble
 ```
 
-Note: you do not need to install Gradle since it will be downloaded automatically, you just need to have Java 8 installed.
-
-Run the application:
+The script above will download Gradle automatically and will build the API. Now you can run the API with this command:
 
 ```
-./gradlew build && java -jar order-api/build/libs/order-api-0.1.0.jar
+./gradlew build && java -jar order-api/build/libs/order-api-*.jar
 ```
 
-Next you can use the Order API through Swagger UI on `http://localhost:8080/swagger-ui.html`.
+Next you can use the Order API through Swagger UI on http://localhost:8080/swagger-ui.html.
 
 ## References
 

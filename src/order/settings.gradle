@@ -3,5 +3,4 @@
 
 include 'order-api'
 include 'order-service'
-include 'common'
-project(":common").projectDir = new File('../common')
+include ':common'
